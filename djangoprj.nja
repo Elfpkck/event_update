@@ -1,0 +1,29 @@
+{
+  "mainFile": "", 
+  "use-tabs": false, 
+  "venv": "/home/elf/prj/myvenv/bin/python", 
+  "relatedProjects": [], 
+  "name": "djangoprj", 
+  "license": "GNU General Public License v3", 
+  "url": "", 
+  "pythonPath": "/home/elf/prj/myvenv/bin/python", 
+  "preExecScript": "", 
+  "additional_builtins": [], 
+  "programParams": "", 
+  "indentation": 4, 
+  "PYTHONPATH": "", 
+  "supported-extensions": [
+    ".py", 
+    ".html", 
+    ".jpg", 
+    ".png", 
+    ".ui", 
+    ".css", 
+    ".json", 
+    ".js", 
+    ".ini"
+  ], 
+  "project-type": "", 
+  "postExecScript": "", 
+  "description": ""
+}
