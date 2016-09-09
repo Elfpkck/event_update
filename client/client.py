@@ -14,6 +14,8 @@ data = {"gameId": 1,
     {"eventId": -5, "startTime": "2016-09-02T12:20:00+0300"},
     {"eventId": 'pp'},
     {"eventId": 8, "startTime": "2016-09-02T12:20:00+00"},
+    {"eventId": 8, "startTime": "2017-09-02T12:20:00+0300"},
+    {"eventId": 8, "startTime": "2016-09-09T10:00:50+0000"},
 ]
 }
 headers = {'content-type': 'application/json'}
