@@ -3,5 +3,5 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.event_update, name='event_update'),
+    url(r'^$', views.eventUpdate, name='event_update'),
 ]
