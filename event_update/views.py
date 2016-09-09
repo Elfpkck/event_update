@@ -1,5 +1,5 @@
 import json
-import datetime
+from datetime import datetime
 from django.http import StreamingHttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from event_update.models import Event
@@ -19,8 +19,8 @@ def validateKey(dict, *keys):
 
 def validate5Min(date_text):
     now = strftime('%Y-%m-%dT%H:%M:%S%z', gmtime())
-    now = datetime.datetime.strptime(now, '%Y-%m-%dT%H:%M:%S%z')
-    date_text = datetime.datetime.strptime(date_text, '%Y-%m-%dT%H:%M:%S%z')
+    now = datetime.strptime(now, '%Y-%m-%dT%H:%M:%S%z')
+    date_text = datetime.strptime(date_text, '%Y-%m-%dT%H:%M:%S%z')
     diff = date_text - now
     if diff.days > 0 or (diff.days == 0 and diff.seconds > 300):
         return True
@@ -29,7 +29,7 @@ def validate5Min(date_text):
 def valiDateTime(date_text):
     '''Checks format of the string with datetime.'''
     try:
-        datetime.datetime.strptime(date_text, '%Y-%m-%dT%H:%M:%S%z')
+        datetime.strptime(date_text, '%Y-%m-%dT%H:%M:%S%z')
     except ValueError:
         return False
     else:
