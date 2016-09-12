@@ -18,6 +18,10 @@ def validateKey(dict, *keys):
 
 
 def validate5Min(date_text):
+    """Compares present UTC +0 time with time from input string.
+    If time from input string bigger than 300 seconds, return true.
+
+    """
     now = strftime('%Y-%m-%dT%H:%M:%S%z', gmtime())
     now = datetime.strptime(now, '%Y-%m-%dT%H:%M:%S%z')
     date_text = datetime.strptime(date_text, '%Y-%m-%dT%H:%M:%S%z')
@@ -77,7 +81,7 @@ def saveData(request):
 
 @csrf_exempt
 def eventUpdate(request):
-    '''Checks type of request. If it "POST", parses data into
+    '''Checks type of request. If it is "POST", parses data into
     database and shows error quontity and error places.
 
     '''
